@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ini Halaman Form</title>
+</head>
+<body>
+<h1>Formulir Isian</h1>
+<p>tag form adalah semantic markup untuk beberapa inputan</p>
+<form action="/daftar" method="get">
+    <div>
+        <label for="name">Nama Lengkap Menggunakan Label</label>
+        <input id="name" name="name" placeholder="nama menggunakan placeholder" type="text">
+    </div>
+    <div>
+        <label for="email">Email Menggunakan Label</label>
+        <input id="email" name="email" placeholder="email menggunakan placeholder" type="email" required>
+    </div>
+    <div>
+        <label for="password">Password Menggunakan Label</label>
+        <input id="password" name="password" placeholder="password menggunakan placeholder" type="password" required minlength="3" maxlength="6">
+    </div>
+    <div>
+        <label for="number">number Menggunakan Label</label>
+        <input id="number" name="number" placeholder="number menggunakan placeholder" type="number">
+    </div>
+
+    <div>
+        <label>masukan barang</label>
+        <p>jika berbeda name maka radio button akan tidak bisa dipilih salah satu</p>
+        <input name="barang" type="radio" value="baju"> <label> ">Baju</label>
+        <input name="barang" type="radio" value="kemeja"> <label >kemeja</label>
+    </div>
+
+    <div>
+        <label> ukuran </label>
+        <select name="ukuran">
+            <option>--- masukan jenis Ukuran -----</option>
+            <option value="s">Small</option>
+            <option value="m">Mediu,</option>
+            <option value="l">Large</option>
+            <option value="xl">Xtra Large</option>
+        </select>
+    </div>
+
+    <div>
+        <label>apakah setuju jika anda ganteng?</label>
+        <input name="checkbox" type="checkbox" value="ya"> ya </input>
+        <input name="checkbox" type="checkbox" value="tidak"> tidak </input>
+    </div>
+    <div>
+        <label>Catatan</label>
+        <textarea name="catatan" cols="30" rows="10"></textarea>
+    </div>
+
+    <button type="submit" value="Daftar">Submit mengirim data</button>
+    <button type="button">button yang tidak mengirimkan data</button>
+
+</form>
+<hr>
+<p>name berguna untuk memanggil value di param di atas ketika menekan tombol submit yang bermethod get dan adction daftar </p>
+</body>
+</html>
