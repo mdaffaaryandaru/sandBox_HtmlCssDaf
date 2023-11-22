@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+  font-family: "nunito", sans-serif;
+}
+nav {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+nav .nav-link {
+  color: white;
+}
+
+nav .nav-link:hover {
+  color: yellow;
+}
+
+nav .navbar-brand {
+  color: red;
+}
+
