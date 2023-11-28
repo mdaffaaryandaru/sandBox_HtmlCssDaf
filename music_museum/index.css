@@ -12,10 +12,13 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-  color: yellow;
+  color: red;
 }
 
 nav .navbar-brand {
   color: red;
 }
 
+.navbar.scrolled {
+  background-color: white;
+}
