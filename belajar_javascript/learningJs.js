@@ -97,11 +97,14 @@ function belajarLooping() {
   for (let i = 1; i <= 5; i++) {
     // ketika 1 (i) <= 5 maka akan terus di looping dan menghasilkan angka 1 - 5
     console.log(` Hallo ${i} : `); // ini adalah string literal yang dimana kita bisa memasukkan variable ke dalam string
-    for (let j = 0; j < string.length; j++) {
+    for (let j = 0; j <= string.length; j++) {
       // ketika 0 (j) < 6 maka akan terus di looping dan menghasilkan string sebanyak 6 huruf karena string.length = 6
-      //lalu string akan membaca karakter penuh karena string.length terbaca dari 0
+      //string.length akan membaca panjang dari string tersebut (6)
       console.log(`${string}`); // string literal untuk memanggil variable string
+      //akan mengeluarkan output string sebanyak 5x karena 5 < 6 dan 6 tidak < 6
       //jika menambahkan [j] pada log maka akan akan mengambil karakter dari string tersebut
+      //karena [j] berbentuk array maka akan terhitung dari 0
+      //jika ingin mengambil karakter dari string tersebut maka harus menambahkan [j] pada log dan ingat j akan terhitung dari 0 karena akan di hitung sebagai array
     }
   }
 }
