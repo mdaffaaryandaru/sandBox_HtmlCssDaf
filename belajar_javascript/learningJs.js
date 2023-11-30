@@ -107,6 +107,68 @@ function belajarLooping() {
       //jika ingin mengambil karakter dari string tersebut maka harus menambahkan [j] pada log dan ingat j akan terhitung dari 0 karena akan di hitung sebagai array
     }
   }
+
+  let i = "daffa ganteng banget";
+  for (let j = 0; j <= 10; j++) {
+    console.log(j);
+    for (let k = 0; k <= i.length; k++) {
+      console.log(i);
+    }
+    //k akan di looping sebanyak i.length yang di mulai dari 0
+    //apakah 0 (k) <= 5 ? ya
+    //apakah 1 (k) <= 5 ? ya
+    //apakah 2 (k) <= 5 ? ya
+    //apakah 3 (k) <= 5 ? ya
+    //apakah 4 (k) <= 5 ? ya
+    //apakah 5 (k) <= 5 ? ya
+    //maka akan ada 5 output i
+    //jika di mulai dari 1 maka akan ada 4 output i
+    //apakah 1 (k) <= 5 ? ya
+    //apakah 2 (k) <= 5 ? ya
+    //apakah 3 (k) <= 5 ? ya
+    //apakah 4 (k) <= 5 ? ya
+    //apakah 5 (k) <= 5 ? ya
+  }
+
+  const belajarLoopingArray = [
+    // array parent
+    [1, 2, 3, 4], // array child
+    [1, 2, 3, 4], // array child
+    [1, 2, 3, 4], // array child
+  ];
+  //looping untuk mengambil data dari array yang ada di dalam array
+  // belajarLoopingArray.length = 3 yaitu adalah total array di dalam array parent belajarLoopingArray
+  for (let i = 0; i < belajarLoopingArray.length; i++) {
+    // variable untuk mengambil data yang ada di dalam array parent
+    const data = belajarLoopingArray[i];
+    //output untuk menghitung array parent karena i < belajarLoopingArray.length
+    console.log(`array ke  ${i} :`);
+    // data.length = 4 yaitu adalah total array di dalam array child
+    for (let j = 0; j < data.length; j++) {
+      //output untuk  menampilkan data yang ada di dalam array child
+      console.log(data[j]);
+    }
+  }
+
+  const nama = [
+    ["Muhammad", "Daffa", "Aryandaru"],
+    ["Muhammad", "Daffa", "Aryandaru"],
+    ["Muhammad", "Daffa", "Aryandaru"],
+  ];
+  const question = [
+    "yang paling ganteng",
+    "yang paling tampan",
+    "yang paling baik",
+  ];
+
+  for (let i = 0; i < question.length; i++) {
+    const data = question[i];
+    const data2 = nama[i];
+    console.log(`siapa ${data}`);
+    for (let j = 0; j < data2.length; j++) {
+      console.log(data2[j]);
+    }
+  }
 }
 
 return belajarLooping();

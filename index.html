@@ -7,133 +7,191 @@
       name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <title>Belajar Code Politan</title>
+    <title>Aryandaru Sandbox</title>
+    <link rel="icon" type="image/png" href="assets/images/Logo Web.png" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <nav>
-      <aside>
-        <p>
-          <b>Nav</b> merupakan salah satu semantic markup yang memudahkan untuk
-          membagi section ketika di inpect
-        </p>
-        <ul>
-          <li><a href="/payment/index.html">Belajar Html & Css</a></li>
-          <li><a href="/Bootstrap/bootstrap.html">Belajar Bootstrap</a></li>
-          <li><a href="/music_museum/index.html">Music Museum</a></li>
-        </ul>
-        <p>
-          <b>aside</b> juga merupakan satu semantic markup untuk menandai bahwa
-          konten ini pantas untuk di sisi kanan atau kiri
-        </p>
-      </aside>
+  <body class="bg-dark">
+    <!--Main Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/images/Logo Web.png"
+            alt="Logo"
+            width="150"
+            height="60"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <hr />
-
-    <main>
-      <h1>Belajar HTML Code Politan</h1>
-      <p>
-        Ketika di inpect <b>main</b> ini merupakan salah satu semantic markup
-        yang memudahkan untuk membagi section
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        vestibulum accumsan lacus, eget hendrerit augue suscipit quis. Nunc at
-        ligula dictum, sagittis magna at, eleifend sapien. Donec feugiat arcu
-        leo, sit amet semper odio laoreet et. Fusce sit amet nisl vitae purus
-        maximus interdum sit amet non velit. Donec arcu massa, maximus facilisis
-        odio eget, <i>tulisan ini akan berubah jadi miring</i>. Praesent
-        volutpat diam vitae eros condimentum malesuada. Vestibulum eu dapibus
-        mauris. Morbi sagittis eros et nibh rutrum fermentum. Mauris nec metus
-        nisi. <b>Tulisan ini akan berubah menjadi bold</b>.
-        <span
-          >ini adalah pembungkus menggunakan <b>span</b>, dia tidak mengambil
-          satu block horizontal seperti div</span
-        >. Nulla facilisi.
-      </p>
-
-      <div>
-        <p>Ini adalah contoh jika di masukan kedalam <b>div</b></p>
-        <img height="100px" src="Wifey.jfif" width="100px" />
-        <p>
-          in adalah foto wifey jika di masukan ke dalam <b>div</b> <br />
-          dia akan masuk kedalam <b>div</b> dan mengambil 1 block horizontal
-        </p>
-      </div>
-      <hr />
-      <section>
-        <h1>
-          Ini bagian <b>Section</b> ketika di inpect, berguna ketika sebagai
-          pembukus jika ada beberapa section yang ingin di pisah
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          vestibulum accumsan lacus, eget hendrerit augue suscipit quis. Nunc at
-          ligula dictum, sagittis magna at, eleifend sapien. Donec feugiat arcu
-          leo, sit amet semper odio laoreet et. Fusce sit amet nisl vitae purus
-          maximus interdum sit amet non velit. Donec arcu massa, maximus
-          facilisis odio eget, <i>tulisan ini akan berubah jadi miring</i>.
-          Praesent volutpat diam vitae eros condimentum malesuada. Vestibulum eu
-          dapibus mauris. Morbi sagittis eros et nibh rutrum fermentum. Mauris
-          nec metus nisi. <b>Tulisan ini akan berubah menjadi bold</b>.
-          <span
-            >ini adalah pembungkus menggunakan span, dia tidak mengambil satu
-            block horizontal seperti div</span
-          >. Nulla facilisi.
-        </p>
-      </section>
-      <hr />
-      <div>
-        <ul>
-          <li>Ini adalah list 1 Menggunakan <b>Ul</b> (Numbering Circle)</li>
-          <li>Ini adalah list 2 Menggunakan <b>Ul</b> (Numbering Circle)</li>
-          <li>Ini adalah list 3 Menggunakan <b>Ul</b> (Numbering Circle)</li>
-          <li>Ini adalah list 4 Menggunakan <b>Ul</b> (Numbering Circle)</li>
-          <li>Ini adalah list 5 Menggunakan <b>Ul</b> (Numbering Circle)</li>
-        </ul>
-
-        <ol>
-          <li>Ini adalah list 1 Menggunakan <b>Ol</b> (Numbering)</li>
-          <li>Ini adalah list 2 Menggunakan <b>Ol</b> (Numbering)</li>
-          <li>Ini adalah list 3 Menggunakan <b>Ol</b> (Numbering)</li>
-          <li>Ini adalah list 4 Menggunakan <b>Ol</b> (Numbering)</li>
-          <li>Ini adalah list 5 Menggunakan <b>Ol</b> (Numbering)</li>
-        </ol>
-      </div>
-
-      <hr />
-
-      <article>
-        <h1>
-          Ini ketika menggunakan semantic markup <b>Article</b> ketika di
-          inspect
-        </h1>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vestibulum accumsan lacus, eget hendrerit augue suscipit quis. Nunc
-            at ligula dictum, sagittis magna at, eleifend sapien. Donec feugiat
-            arcu leo, sit amet semper odio laoreet et. Fusce sit amet nisl vitae
-            purus maximus interdum sit amet non velit. Donec arcu massa, maximus
-            facilisis odio eget, <i>tulisan ini akan berubah jadi miring</i>.
-            Praesent volutpat diam vitae eros condimentum malesuada. Vestibulum
-            eu dapibus mauris. Morbi sagittis eros et nibh rutrum fermentum.
-            Mauris nec metus nisi. <b>Tulisan ini akan berubah menjadi bold</b>.
-            <span
-              >ini adalah pembungkus menggunakan span, dia tidak mengambil satu
-              block horizontal seperti div</span
-            >. Nulla facilisi.
+    <section class="container background-dark mt-5">
+      <div class="row align-items-center">
+        <div class="col-7 text-start">
+          <h2 class="display-4 text-primary">
+            Hello Welcome To Aryandaru Sandbox
+          </h2>
+          <p class="fw-medium text-white">
+            Welcome to Aryandaru Sandbox Website! Here, you'll find a
+            compilation of all my learnings in web development and an
+            introduction to who I am as a web developer. This website
+            encapsulates everything I've worked on and learned throughout my
+            learning journey. It serves as a comprehensive portfolio showcasing
+            my skills and accomplishments in the world of web development. As
+            you explore this website, you'll get a glimpse into the projects
+            I've undertaken, the challenges I've overcome, and the technologies
+            I've mastered. It's not just a portfolio; it's a visual narrative of
+            my growth and expertise in the realm of web development. I've poured
+            my passion into every line of code, every design element, and every
+            concept shared on this platform. It's a testament to my dedication
+            to the craft and my continual pursuit of excellence. This is not
+            just a website; it's a reflection of my journey in the dynamic field
+            of web development. Thank you for visiting Aryandaru Sandbox
+            Website. Feel free to navigate through the various sections, and I
+            hope you find inspiration and valuable insights within its pages. If
+            you have any questions or thoughts to share, don't hesitate to reach
+            out. Happy exploring!
           </p>
         </div>
-      </article>
-    </main>
+        <div class="col-5" height="50">
+          <img
+            class="img-fluid"
+            src="assets/images/welcomePage.png"
+            alt="vectorPage"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container-box mb-5">
+      <div class="box">
+        <a href="music_museum/index.html">
+          <div class="imgBx">
+            <img src="assets/images/Concert.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Music Museum</h2>
+              <p>My Learning about bootstrap 5</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="payment/index.html">
+          <div class="imgBx">
+            <img src="assets/images/Online Shop.jpg" />
+          </div>
+          <div class="content">
+            <div>
+              <h2>Price Tag</h2>
+              <p>My Learning about Html Css</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img
+            src="https://images.unsplash.com/photo-1603984362497-0a878f607b92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+          />
+        </div>
+        <div class="content">
+          <div>
+            <h2>Image Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              accusamus molestias quidem iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img
+            src="https://images.unsplash.com/photo-1579310962131-aa21f240d986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+          />
+        </div>
+        <div class="content">
+          <div>
+            <h2>Image Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              accusamus molestias quidem iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-  <hr />
-  <footer>
-    <p>
-      Copyright <sup>&copy;</sup> By Muhammad Daffa Aryandaru<br />
-      <b>fotter</b> juga merupakan satu semantic markup untuk menandai bahwa
-      konten ini pantas untuk di sisi kanan atau kiri
-    </p>
-  </footer>
 </html>

@@ -1,6 +1,5 @@
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("#nav");
-    $nav.toogleClass("scrolled", $(this).scrollTop() > $nav.height());
+(function () {
+  $("#msbo").on("click", function () {
+    $("body").toggleClass("msb-x");
   });
-});
+})();
