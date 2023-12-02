@@ -1,3 +1,5 @@
+
+
 function belajarArray() {
   let namaGanteng = ["Muhammad", "Daffa", "Aryandaru"];
   //manambahkan array itu ganteng banget ke dalam array
@@ -169,6 +171,19 @@ function belajarLooping() {
       console.log(data2[j]);
     }
   }
+
+  let a = 0;
+  while (a <= 10) {
+    console.log(a);
+    a++;
+  }
+
+  const username = "Muhammad Daffa Aryandaru";
+  let promptUsername = prompt("masukkan username anda");
+  while (promptUsername !== username) {
+    promptUsername = prompt("masukkan username anda");
+  }
+  alert("anda berhasil login");
 }
 
 return belajarLooping();
