@@ -43,7 +43,7 @@
   height: 100%;
 }
 .container-box .box .imgBx:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
